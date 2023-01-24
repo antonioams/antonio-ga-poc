@@ -23,7 +23,7 @@
       gtag('config', 'G-VQ75D8JQG1');
 
       const observeUrlChange = () => {
-      const oldHref = document.location.href;
+      oldHref = document.location.href;
       const body = document.querySelector("body");
       const observer = new MutationObserver(mutations => {
           mutations.forEach(() => {
