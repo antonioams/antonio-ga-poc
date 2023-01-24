@@ -30,10 +30,12 @@
             if (oldHref !== document.location.href) {
               oldHref = document.location.href;
               /* Changed ! your code here */
+              console.log("url changed!")
               gtag('js', new Date());
               gtag('config', 'G-VQ75D8JQG1');
             }
           });
+          console.log("url event")
         });
         observer.observe(body, { childList: true, subtree: true });
       };
